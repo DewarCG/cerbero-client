@@ -57,8 +57,8 @@ func GetUser(ctx context.Context) *UserSession {
 	return user
 }
 
-func MockUser(ctx context.Context, user *User) context.Context {
-	return context.WithValue(ctx, userKey, user)
+func MockUser(ctx context.Context, user *UserSession) context.Context {
+	return setUser(ctx, user)
 }
 
 func setUser(ctx context.Context, user *UserSession) context.Context {
