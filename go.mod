@@ -1,4 +1,4 @@
-module github.com/dewarcg/cerbero
+module github.com/dewarcg/cerbero-client
 
 go 1.22.1
 
